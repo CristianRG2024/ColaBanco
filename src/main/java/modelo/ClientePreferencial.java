@@ -7,19 +7,21 @@ import cola.Base;
  *
  * @author CRISTIANR
  */
-public class Clientes extends Base {
-    
-    private String edadCliente;
+public class ClientePreferencial extends Base{
+      private String edadCliente;
     private String tiempoCliente;
 
-    public Clientes() {
+    public ClientePreferencial() {
     }
 
-    public Clientes(String edadCliente, String tiempoCliente) {
+    public ClientePreferencial(String edadCliente, String tiempoCliente) {
         this.edadCliente = edadCliente;
         this.tiempoCliente = tiempoCliente;
     }
     
+    
+    
+
     /**
      * Get the value of tiempoCliente
      *
@@ -37,7 +39,6 @@ public class Clientes extends Base {
     public void setTiempoCliente(String tiempoCliente) {
         this.tiempoCliente = tiempoCliente;
     }
-
 
     /**
      * Get the value of edadCliente
@@ -66,7 +67,4 @@ public class Clientes extends Base {
     public Base copy() {
         return new Clientes(edadCliente, tiempoCliente);
     }
-
-    
-    
 }

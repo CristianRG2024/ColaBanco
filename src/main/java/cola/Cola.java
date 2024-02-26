@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package cola;
 
 import java.util.LinkedList;
@@ -13,27 +10,27 @@ import java.util.LinkedList;
 public class Cola <T extends Base> {
     
         
-    private LinkedList<T> personas;
+    private LinkedList<T> tope;
     
     public Cola(){
-        personas = new LinkedList<>();
+        tope = new LinkedList<>();
     }
     
-    public void encolar(T elemento){
-        personas.addLast(elemento);
+    public void encolar(T persona){
+        tope.addLast(persona);
     }
     
     public T desencolar() {
-        return personas.removeFirst();
+        return tope.removeFirst();
     }
     
     public boolean estaVacia() {
-        return personas.isEmpty();
+        return tope.isEmpty();
     }
     @Override
     public String toString(){
         String cad = "[";
-        for (T e: personas){
+        for (T e: tope){
             cad+=" " + e.toString();
         }
         return cad + "]";
